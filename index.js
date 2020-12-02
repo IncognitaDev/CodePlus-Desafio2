@@ -23,7 +23,10 @@ const parentList = [
 ]
 
 function getParent(list, children){
-  return
+  const res = list.find((parentObj) => (
+    parentObj.children == children 
+  ))
+  return res.name
 }
 
 const parent = getParent(parentList, 'Pedro')
